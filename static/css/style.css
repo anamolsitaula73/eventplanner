@@ -267,6 +267,7 @@ html{
 
 .features .row{
     display: flex;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     gap: 5rem;
@@ -275,6 +276,8 @@ html{
 
 .features .row .image{
     flex: 1 1 45rem;
+    width: 100%;
+
 }
 
 
@@ -286,6 +289,8 @@ html{
 
 .features .row .content{
     flex: 1 1 45rem;
+    width: 100%;
+
 }
 
 
@@ -347,6 +352,9 @@ html{
 
 
 /* footer section starts */
+.footer{
+    bottom: 0px;
+}
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
@@ -394,3 +402,10 @@ html{
 
 
 /* footer section ends */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
