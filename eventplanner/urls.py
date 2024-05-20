@@ -20,6 +20,9 @@ from eventplanner import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("aboutus/",views.aboutUS),
-    path("home/",views.home),
-    path("home/<str:name>",views.homeNav),
+    path("",views.home),
+    path("home/<name>",views.homeNav),
+    path("about",views.about,name='about'),
+    path("signup",views.signup,name='signup'),
+    path("login",views.login,name='login')
 ]
