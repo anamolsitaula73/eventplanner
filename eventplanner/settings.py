@@ -54,7 +54,7 @@ ROOT_URLCONF = "eventplanner.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR,"templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -69,6 +69,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "eventplanner.wsgi.application"
 
+STATICFILES_DIRS =[
+    BASE_DIR , "static"
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
